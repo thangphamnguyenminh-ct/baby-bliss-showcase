@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import tailwindcssAnimate from "tailwindcss-animate";
 
 export default {
 	darkMode: ["class"],
@@ -75,7 +76,6 @@ export default {
 					sm: 'calc(var(--radius) - 4px)'
 				},
 				keyframes: {
-					// Accordion
 					'accordion-down': {
 						from: { height: '0', opacity: '0' },
 						to: { height: 'var(--radix-accordion-content-height)', opacity: '1' }
@@ -84,7 +84,6 @@ export default {
 						from: { height: 'var(--radix-accordion-content-height)', opacity: '1' },
 						to: { height: '0', opacity: '0' }
 					},
-					// Fade
 					'fade-in': {
 						'0%': { opacity: '0', transform: 'translateY(10px)' },
 						'100%': { opacity: '1', transform: 'translateY(0)' }
@@ -93,7 +92,6 @@ export default {
 						'0%': { opacity: '1', transform: 'translateY(0)' },
 						'100%': { opacity: '0', transform: 'translateY(10px)' }
 					},
-					// Scale
 					'scale-in': {
 						'0%': { transform: 'scale(0.98)', opacity: '0' },
 						'100%': { transform: 'scale(1)', opacity: '1' }
@@ -101,15 +99,6 @@ export default {
 					'scale-out': {
 						from: { transform: 'scale(1)', opacity: '1' },
 						to: { transform: 'scale(0.98)', opacity: '0' }
-					},
-					// Slide
-					'slide-in-right': {
-						'0%': { transform: 'translateX(100%)' },
-						'100%': { transform: 'translateX(0)' }
-					},
-					'slide-out-right': {
-						'0%': { transform: 'translateX(0)' },
-						'100%': { transform: 'translateX(100%)' }
 					}
 				},
 				animation: {
@@ -126,5 +115,5 @@ export default {
 				}
 			}
 	},
-	plugins: [require("tailwindcss-animate")],
+	plugins: [tailwindcssAnimate],
 } satisfies Config;

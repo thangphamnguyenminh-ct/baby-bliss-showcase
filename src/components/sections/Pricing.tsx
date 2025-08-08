@@ -70,13 +70,15 @@ const Pricing = () => {
       <div className="grid gap-6 lg:grid-cols-3">
         {tiers.map((t) => (
           <Card key={t.name} className={t.highlight ? "ring-2 ring-primary" : ""}>
-            <button
+            <div
               onClick={() => { setActiveKey(t.key); setOpen(true); }}
-              className="w-full rounded-t-lg overflow-hidden border-b"
-              aria-label={`Xem thư viện demo gói ${t.name}`}
+              className="w-full rounded-t-lg overflow-hidden border-b relative group cursor-pointer"
             >
               <img src={t.images[0]} alt={`Ảnh demo gói ${t.name}`} className="w-full h-44 object-cover" />
-            </button>
+              <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <span className="text-white text-lg font-semibold">Xem qua</span>
+              </div>
+            </div>
             <CardHeader>
               <CardTitle className="flex items-baseline justify-between">
                 <span>{t.name}</span>
