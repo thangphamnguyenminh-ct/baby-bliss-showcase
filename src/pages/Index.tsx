@@ -1,6 +1,6 @@
 import NavBar from "@/components/NavBar";
 import Hero from "@/components/sections/Hero";
-import Gallery from "@/components/sections/Gallery";
+import RecentWork from "@/components/sections/RecentWork";
 import About from "@/components/sections/About";
 import Demo from "@/components/sections/Demo";
 import Pricing from "@/components/sections/Pricing";
@@ -14,7 +14,7 @@ const Index = () => {
       <div className="container pt-8 md:pt-12">
         <Hero />
       </div>
-      <Gallery />
+      <RecentWork />
       <About />
       <Demo />
       <Pricing />

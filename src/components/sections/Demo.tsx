@@ -9,6 +9,10 @@ import g3 from "@/assets/gallery3.jpg";
 import g4 from "@/assets/gallery4.jpg";
 import g5 from "@/assets/gallery5.jpg";
 import g6 from "@/assets/gallery6.jpg";
+import g9 from "@/assets/gallery9.jpg";
+import g10 from "@/assets/gallery10.jpg";
+import g11 from "@/assets/gallery11.jpg";
+import g12 from "@/assets/gallery12.jpg";
 
 const demoImages = [
   { src: g1, alt: "Khoảnh khắc bé ngủ yên trên nền vải" },
@@ -17,6 +21,10 @@ const demoImages = [
   { src: g4, alt: "Bé ngủ bọc khăn trung tính" },
   { src: g5, alt: "Cái ôm ấm áp của gia đình" },
   { src: g6, alt: "Bàn tay bé cầm trái tim len" },
+  { src: g9, alt: "Anh/chị hôn trán em bé, ánh sáng ấm áp" },
+  { src: g10, alt: "Chân dung tối giản trên phông nền mềm" },
+  { src: g11, alt: "Bé đội mũ len nhỏ, tông màu trung tính" },
+  { src: g12, alt: "Bàn tay bố mẹ tạo hình trái tim quanh chân bé" },
 ];
 
 const Demo = () => {
