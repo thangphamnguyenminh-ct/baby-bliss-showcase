@@ -2,6 +2,9 @@ import NavBar from "@/components/NavBar";
 import Hero from "@/components/sections/Hero";
 import Gallery from "@/components/sections/Gallery";
 import About from "@/components/sections/About";
+import Demo from "@/components/sections/Demo";
+import Pricing from "@/components/sections/Pricing";
+import Testimonials from "@/components/sections/Testimonials";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -13,6 +16,9 @@ const Index = () => {
       </div>
       <Gallery />
       <About />
+      <Demo />
+      <Pricing />
+      <Testimonials />
       <Footer />
     </main>
   );
