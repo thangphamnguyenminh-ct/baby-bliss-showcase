@@ -18,22 +18,22 @@ const Hero = () => {
           <div className="container pb-10 md:pb-14">
             <div className="max-w-2xl animate-enter">
               <h1 className="font-display text-4xl md:text-6xl font-semibold leading-tight">
-                Timeless Newborn Photography
+                Ảnh Newborn Tinh Tế & Vượt Thời Gian
               </h1>
               <p className="mt-4 text-lg md:text-xl text-muted-foreground">
-                Gentle posing. Natural light. Heirloom images of your baby’s first days.
+                Tạo dáng nhẹ nhàng. Ánh sáng tự nhiên. Những bức ảnh kỷ vật của những ngày đầu đời.
               </p>
               <div className="mt-6 flex flex-wrap gap-3">
                 <a href="#contact">
-                  <Button variant="hero" size="lg">Book Your Session</Button>
+                  <Button variant="hero" size="lg">Đặt lịch chụp</Button>
                 </a>
                 <a href="#portfolio">
-                  <Button variant="outline" size="lg">View Portfolio</Button>
+                  <Button variant="outline" size="lg">Xem bộ sưu tập</Button>
                 </a>
               </div>
               <div className="mt-6 flex items-center gap-6 text-sm text-muted-foreground">
-                <div className="flex items-center gap-2"><Star className="text-accent" /><span>5.0 average rating</span></div>
-                <div className="flex items-center gap-2"><Camera className="text-accent" /><span>Newborn specialist</span></div>
+                <div className="flex items-center gap-2"><Star className="text-accent" /><span>Đánh giá 5.0</span></div>
+                <div className="flex items-center gap-2"><Camera className="text-accent" /><span>Chuyên gia newborn</span></div>
               </div>
             </div>
           </div>

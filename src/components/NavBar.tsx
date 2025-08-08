@@ -8,14 +8,14 @@ const NavBar = () => {
           Luna Newborn Photography
         </a>
         <div className="hidden md:flex items-center gap-6">
-          <a href="#portfolio" className="story-link text-foreground/80">Portfolio</a>
-          <a href="#about" className="story-link text-foreground/80">About</a>
+          <a href="#portfolio" className="story-link text-foreground/80">Bộ sưu tập</a>
+          <a href="#about" className="story-link text-foreground/80">Giới thiệu</a>
           <a href="#demo" className="story-link text-foreground/80">Demo</a>
-          <a href="#pricing" className="story-link text-foreground/80">Pricing</a>
-          <a href="#testimonials" className="story-link text-foreground/80">Testimonials</a>
-          <a href="#contact" className="story-link text-foreground/80">Contact</a>
-          <a href="#contact" aria-label="Book a session">
-            <Button variant="hero" size="sm">Book Now</Button>
+          <a href="#pricing" className="story-link text-foreground/80">Báo giá</a>
+          <a href="#testimonials" className="story-link text-foreground/80">Cảm nhận</a>
+          <a href="#contact" className="story-link text-foreground/80">Liên hệ</a>
+          <a href="#contact" aria-label="Đặt lịch chụp">
+            <Button variant="hero" size="sm">Đặt lịch</Button>
           </a>
         </div>
       </nav>

@@ -1,9 +1,18 @@
+import { useState } from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { CheckCircle } from "lucide-react";
+import mini1 from "@/assets/pricing-mini-1.jpg";
+import mini2 from "@/assets/pricing-mini-2.jpg";
+import classic1 from "@/assets/pricing-classic-1.jpg";
+import classic2 from "@/assets/pricing-classic-2.jpg";
+import heirloom1 from "@/assets/pricing-heirloom-1.jpg";
+import heirloom2 from "@/assets/pricing-heirloom-2.jpg";
 
 const tiers = [
   {
+    key: "mini",
     name: "Mini",
     price: "2.500.000đ",
     desc: "Phù hợp ghi lại khoảnh khắc đầu đời nhanh gọn.",
@@ -12,8 +21,10 @@ const tiers = [
       "5 ảnh chỉnh màu chất lượng cao",
       "Tại studio, phông nền đơn giản",
     ],
+    images: [mini1, mini2],
   },
   {
+    key: "classic",
     name: "Classic",
     price: "4.500.000đ",
     desc: "Gói phổ biến cân bằng thời gian và kết quả.",
@@ -24,8 +35,10 @@ const tiers = [
       "Tư vấn trước buổi chụp",
     ],
     highlight: true,
+    images: [classic1, classic2],
   },
   {
+    key: "heirloom",
     name: "Heirloom",
     price: "7.500.000đ",
     desc: "Trọn vẹn khoảnh khắc, lưu giữ kỷ vật gia đình.",
@@ -35,10 +48,16 @@ const tiers = [
       "Chụp cùng bố mẹ/anh chị",
       "Hỗ trợ styling và hướng dẫn pose",
     ],
+    images: [heirloom1, heirloom2],
   },
 ];
 
 const Pricing = () => {
+  const [open, setOpen] = useState(false);
+  const [activeKey, setActiveKey] = useState<string | null>(null);
+
+  const activeTier = tiers.find((t) => t.key === activeKey);
+
   return (
     <section id="pricing" className="container py-16 md:py-24">
       <header className="max-w-2xl mb-8">
@@ -51,6 +70,13 @@ const Pricing = () => {
       <div className="grid gap-6 md:grid-cols-3">
         {tiers.map((t) => (
           <Card key={t.name} className={t.highlight ? "ring-2 ring-primary" : ""}>
+            <button
+              onClick={() => { setActiveKey(t.key); setOpen(true); }}
+              className="w-full rounded-t-lg overflow-hidden border-b"
+              aria-label={`Xem thư viện demo gói ${t.name}`}
+            >
+              <img src={t.images[0]} alt={`Ảnh demo gói ${t.name}`} className="w-full h-44 object-cover" />
+            </button>
             <CardHeader>
               <CardTitle className="flex items-baseline justify-between">
                 <span>{t.name}</span>
@@ -74,6 +100,19 @@ const Pricing = () => {
           </Card>
         ))}
       </div>
+
+      <Dialog open={open} onOpenChange={(v) => { setOpen(v); if (!v) setActiveKey(null); }}>
+        <DialogContent className="max-w-3xl">
+          <DialogHeader>
+            <DialogTitle>Thư viện demo – {activeTier?.name}</DialogTitle>
+          </DialogHeader>
+          <div className="grid grid-cols-2 gap-4">
+            {activeTier?.images.map((img, i) => (
+              <img key={i} src={img} alt={`Ảnh demo ${activeTier?.name} ${i + 1}`} className="w-full h-48 object-cover rounded-lg border" />
+            ))}
+          </div>
+        </DialogContent>
+      </Dialog>
     </section>
   );
 };
