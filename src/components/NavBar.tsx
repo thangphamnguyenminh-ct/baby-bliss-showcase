@@ -1,22 +1,67 @@
 import { Button } from "@/components/ui/button";
+import {
+  Sheet,
+  SheetContent,
+  SheetTrigger,
+  SheetClose
+} from "@/components/ui/sheet";
+import { Menu } from "lucide-react";
 
 const NavBar = () => {
+  const navLinks = [
+    { href: "#portfolio", label: "Dự án gần đây" },
+    { href: "#about", label: "Giới thiệu" },
+    { href: "#demo", label: "Demo" },
+    { href: "#pricing", label: "Báo giá" },
+    { href: "#testimonials", label: "Cảm nhận" },
+    { href: "#contact", label: "Liên hệ" },
+  ];
+
   return (
     <header className="w-full sticky top-0 z-40 bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b">
       <nav className="container flex h-16 items-center justify-between">
         <a href="#top" className="font-display text-xl tracking-tight">
-          Luna Newborn Photography
+          Tisstudio
         </a>
+
+        {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-6">
-          <a href="#portfolio" className="story-link text-foreground/80">Bộ sưu tập</a>
-          <a href="#about" className="story-link text-foreground/80">Giới thiệu</a>
-          <a href="#demo" className="story-link text-foreground/80">Demo</a>
-          <a href="#pricing" className="story-link text-foreground/80">Báo giá</a>
-          <a href="#testimonials" className="story-link text-foreground/80">Cảm nhận</a>
-          <a href="#contact" className="story-link text-foreground/80">Liên hệ</a>
+          {navLinks.map((link) => (
+            <a key={link.href} href={link.href} className="story-link text-foreground/80">
+              {link.label}
+            </a>
+          ))}
           <a href="#contact" aria-label="Đặt lịch chụp">
             <Button variant="hero" size="sm">Đặt lịch</Button>
           </a>
+        </div>
+
+        {/* Mobile Navigation */}
+        <div className="md:hidden">
+          <Sheet>
+            <SheetTrigger asChild>
+              <Button variant="ghost" size="icon">
+                <Menu className="h-6 w-6" />
+                <span className="sr-only">Toggle navigation menu</span>
+              </Button>
+            </SheetTrigger>
+            <SheetContent side="right" className="w-[200px] sm:w-[240px]">
+              <nav className="flex flex-col gap-4 pt-6">
+                {navLinks.map((link) => (
+                  <SheetClose key={link.href} asChild>
+                    <a href={link.href} className="text-lg font-medium">
+                      {link.label}
+                    </a>
+                  </SheetClose>
+                ))}
+                <SheetClose asChild>
+                  <a href="#contact" aria-label="Đặt lịch chụp">
+                    <Button variant="hero" className="w-full mt-4">Đặt lịch</Button>
+                  </a>
+                </SheetClose>
+              </nav>
+            </SheetContent>
+          </Sheet>
         </div>
       </nav>
     </header>

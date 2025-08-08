@@ -53,28 +53,30 @@ const Demo = () => {
             <DialogTitle>Thư viện ảnh demo</DialogTitle>
           </DialogHeader>
 
-          {selected === null ? (
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-              {demoImages.map((img, idx) => (
-                <button key={idx} onClick={() => setSelected(idx)} className="group rounded-lg overflow-hidden border hover-scale" aria-label={`Xem ảnh: ${img.alt}`}>
-                  <AspectRatio ratio={4 / 3}>
-                    <img src={img.src} alt={img.alt} className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.03]" />
-                  </AspectRatio>
-                </button>
-              ))}
-            </div>
-          ) : (
-            <div className="space-y-4">
-              <AspectRatio ratio={4 / 3}>
-                <img src={demoImages[selected].src} alt={demoImages[selected].alt} className="h-full w-full object-cover rounded-lg border" />
-              </AspectRatio>
-              <div className="flex items-center justify-between">
-                <Button variant="outline" onClick={() => setSelected((i) => (i! > 0 ? (i! - 1) : demoImages.length - 1))}>Ảnh trước</Button>
-                <Button variant="outline" onClick={() => setSelected(null)}>Quay lại lưới</Button>
-                <Button variant="outline" onClick={() => setSelected((i) => (i! < demoImages.length - 1 ? (i! + 1) : 0))}>Ảnh tiếp</Button>
+          <div className="overflow-y-auto">
+            {selected === null ? (
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+                {demoImages.map((img, idx) => (
+                  <button key={idx} onClick={() => setSelected(idx)} className="group rounded-lg overflow-hidden border hover-scale" aria-label={`Xem ảnh: ${img.alt}`}>
+                    <AspectRatio ratio={4 / 3}>
+                      <img src={img.src} alt={img.alt} className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.03]" />
+                    </AspectRatio>
+                  </button>
+                ))}
               </div>
-            </div>
-          )}
+            ) : (
+              <div className="space-y-4">
+                <AspectRatio ratio={4 / 3}>
+                  <img src={demoImages[selected].src} alt={demoImages[selected].alt} className="h-full w-full object-cover rounded-lg border" />
+                </AspectRatio>
+                <div className="flex items-center justify-between">
+                  <Button variant="outline" onClick={() => setSelected((i) => (i! > 0 ? (i! - 1) : demoImages.length - 1))}>Ảnh trước</Button>
+                  <Button variant="outline" onClick={() => setSelected(null)}>Quay lại lưới</Button>
+                  <Button variant="outline" onClick={() => setSelected((i) => (i! < demoImages.length - 1 ? (i! + 1) : 0))}>Ảnh tiếp</Button>
+                </div>
+              </div>
+            )}
+          </div>
         </DialogContent>
       </Dialog>
     </section>

@@ -30,7 +30,7 @@ const RecentWork = () => {
   return (
     <section id="portfolio" className="container py-16 md:py-24">
       <header className="max-w-2xl mb-8">
-        <h2 className="font-display text-3xl md:text-4xl">Recent work</h2>
+        <h2 className="font-display text-3xl md:text-4xl">Dự án gần đây</h2>
         <p className="mt-2 text-muted-foreground">
           Những khoảnh khắc tinh tế được ghi lại.
         </p>
@@ -46,11 +46,7 @@ const RecentWork = () => {
           {galleryImages.map((img, index) => (
             <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
               <div className="p-1">
-                <Card>
-                  <CardContent className="flex aspect-square items-center justify-center p-6">
-                    <img src={img.src} alt={img.alt} className="w-full h-full object-cover rounded-lg" />
-                  </CardContent>
-                </Card>
+                <img src={img.src} alt={img.alt} className="w-full h-full object-cover rounded-lg aspect-square" />
               </div>
             </CarouselItem>
           ))}

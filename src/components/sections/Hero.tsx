@@ -1,6 +1,6 @@
 import heroImage from "@/assets/hero-newborn.jpg";
 import { Button } from "@/components/ui/button";
-import { Star, Camera } from "lucide-react";
+import { Facebook, Instagram, Mail, Phone } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -31,9 +31,20 @@ const Hero = () => {
                   <Button variant="outline" size="lg">Xem bộ sưu tập</Button>
                 </a>
               </div>
-              <div className="mt-6 flex items-center gap-6 text-sm text-muted-foreground">
-                <div className="flex items-center gap-2"><Star className="text-accent" /><span>Đánh giá 5.0</span></div>
-                <div className="flex items-center gap-2"><Camera className="text-accent" /><span>Chuyên gia newborn</span></div>
+              <div className="flex gap-4 mt-6">
+                <a href="https://facebook.com/yourpage" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                  <Facebook className="h-6 w-6 text-accent hover:text-primary transition-colors" />
+                </a>
+                <a href="https://instagram.com/yourpage" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                  <Instagram className="h-6 w-6 text-accent hover:text-primary transition-colors" />
+                </a>
+                <a href="mailto:hello@example.com" aria-label="Email">
+                  <Mail className="h-6 w-6 text-accent hover:text-primary transition-colors" />
+                </a>
+                <a href="tel:+1234567890" aria-label="Phone" className="flex items-center gap-2">
+                  <Phone className="h-6 w-6 text-accent hover:text-primary transition-colors" />
+                  <span className="text-accent hover:text-primary transition-colors">+84 123 456 789</span>
+                </a>
               </div>
             </div>
           </div>

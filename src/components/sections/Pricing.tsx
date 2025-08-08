@@ -67,7 +67,7 @@ const Pricing = () => {
         </p>
       </header>
 
-      <div className="grid gap-6 md:grid-cols-3">
+      <div className="grid gap-6 lg:grid-cols-3">
         {tiers.map((t) => (
           <Card key={t.name} className={t.highlight ? "ring-2 ring-primary" : ""}>
             <button
