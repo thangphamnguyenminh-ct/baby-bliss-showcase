@@ -19,7 +19,7 @@ const TestimonialsSection = ({ content }: { content: Testimonials }) => {
             <CardHeader className="flex flex-row items-center gap-4">
               <div className="h-14 w-14 rounded-full overflow-hidden">
                 <img
-                  src={getThumbSizeUrl(r.avatar.img_id, 100)}
+                  src={getThumbSizeUrl(r.avatar.img_id, 200)}
                   alt={r.avatar.alt}
                   className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110"
                   loading="lazy"
