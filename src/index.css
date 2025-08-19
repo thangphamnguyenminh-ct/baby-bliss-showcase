@@ -105,9 +105,6 @@ All colors MUST be HSL.
 }
 
 @layer utilities {
-  .hover-scale {
-    @apply transition-transform duration-200 will-change-transform hover:scale-105;
-  }
   .story-link {
     @apply relative inline-block; 
   }

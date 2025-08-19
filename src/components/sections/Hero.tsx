@@ -1,34 +1,37 @@
-import heroImage from "@/assets/hero-newborn.jpg";
 import { Button } from "@/components/ui/button";
+import type { Hero } from "@/config/types";
+import { getFullSizeUrl } from "@/lib/utils";
 import { Facebook, Instagram, Mail, Phone } from "lucide-react";
 
-const Hero = () => {
+const HeroSection = ({ content }: { content: Hero }) => {
+  const { image, title, subtitle, cta1, cta2 } = content;
+
   return (
     <section id="top" className="relative">
-      <div className="relative overflow-hidden rounded-2xl border bg-card shadow-sm">
+      <div className="relative overflow-hidden bg-card shadow-sm">
         <img
-          src={heroImage}
-          alt="Newborn baby swaddled in soft linen, gentle natural light"
+          src={getFullSizeUrl(image.img_id)}
+          alt={image.alt}
           className="w-full h-[60vh] md:h-[72vh] object-cover"
           loading="eager"
           decoding="async"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-background/40 to-transparent" />
         <div className="absolute inset-0 flex items-end">
-          <div className="container pb-10 md:pb-14">
+          <div className="w-full px-4 md:px-6 lg:container lg:mx-auto pb-10 md:pb-14">
             <div className="max-w-2xl animate-enter">
               <h1 className="font-display text-4xl md:text-6xl font-semibold leading-tight">
-                Ảnh Newborn Tinh Tế & Vượt Thời Gian
+                {title}
               </h1>
-              <p className="mt-4 text-lg md:text-xl text-muted-foreground">
-                Tạo dáng nhẹ nhàng. Ánh sáng tự nhiên. Những bức ảnh kỷ vật của những ngày đầu đời.
+              <p className="mt-4 text-lg md:text-xl text-muted-foreground hidden md:block">
+                {subtitle}
               </p>
               <div className="mt-6 flex flex-wrap gap-3">
                 <a href="#contact">
-                  <Button variant="hero" size="lg">Đặt lịch chụp</Button>
+                  <Button variant="hero" size="lg">{cta1}</Button>
                 </a>
                 <a href="#portfolio">
-                  <Button variant="outline" size="lg">Xem bộ sưu tập</Button>
+                  <Button variant="outline" size="lg">{cta2}</Button>
                 </a>
               </div>
               <div className="flex gap-4 mt-6">
@@ -54,4 +57,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default HeroSection;

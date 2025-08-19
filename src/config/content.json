@@ -1,0 +1,160 @@
+{
+  "hero": {
+    "image": {
+      "img_id": "cld-sample",
+      "alt": "Newborn baby swaddled in soft linen, gentle natural light"
+    },
+    "title": "Ảnh Newborn Tinh Tế & Vượt Thời Gian",
+    "subtitle": "Tạo dáng nhẹ nhàng. Ánh sáng tự nhiên. Những bức ảnh kỷ vật của những ngày đầu đời.",
+    "cta1": "Đặt lịch chụp",
+    "cta2": "Xem bộ sưu tập"
+  },
+  "about": {
+    "title": "Giới thiệu studio",
+    "subtitle": "Triết lý chụp ảnh nhẹ nhàng, an toàn và hướng đến cảm xúc.",
+    "features": [
+      {
+        "title": "Không gian nhẹ nhàng, theo nhịp của bé",
+        "text": "Mọi buổi chụp đều diễn ra chậm rãi, ưu tiên sự thoải mái của bé. Có thời gian cho bú, thay tã và ôm ấp, để từng khoảnh khắc đều tự nhiên.",
+        "image": {
+          "img_id": "cld-sample",
+          "alt": "Không gian studio ấm áp với ánh sáng cửa sổ và vải lanh"
+        }
+      },
+      {
+        "title": "An toàn là số 1",
+        "text": "Kỹ thuật tạo dáng baby-led, luôn có tay nâng đỡ khi cần. Đạo cụ sạch sẽ, mềm mại, đã được khử khuẩn và thân thiện với làn da bé.",
+        "image": {
+          "img_id": "cld-sample",
+          "alt": "Kỹ thuật đặt bé an toàn với tay hỗ trợ và phông nền pastel"
+        }
+      },
+      {
+        "title": "Cả gia đình cùng tham gia",
+        "text": "Khuyến khích bố mẹ và anh chị cùng vào khung hình. Những cái ôm, ánh nhìn tự nhiên sẽ là kỷ vật vô giá của gia đình.",
+        "image": {
+          "img_id": "cld-sample",
+          "alt": "Khu vực tiếp khách ấm cúng dành cho gia đình với ánh sáng tự nhiên"
+        }
+      }
+    ]
+  },
+  "recentWork": {
+    "title": "Dự án gần đây",
+    "subtitle": "Những khoảnh khắc tinh tế được ghi lại.",
+    "images": [
+      { "img_id": "cld-sample", "alt": "Bé ngủ bọc khăn màu hồng phấn trên nền vải lanh" },
+      { "img_id": "cld-sample", "alt": "Bố mẹ ôm bé cạnh cửa sổ, ánh sáng tự nhiên" },
+      { "img_id": "cld-sample", "alt": "Cận cảnh bàn chân bé sơ sinh quấn chăn mềm" },
+      { "img_id": "cld-sample", "alt": "Bé ngủ trên chăn dệt, khăn quấn trung tính" },
+      { "img_id": "cld-sample", "alt": "Khoảnh khắc gia đình ôm ấp bé gần cửa sổ" },
+      { "img_id": "cld-sample", "alt": "Cận cảnh bàn tay bé cầm trái tim len nhỏ" },
+      { "img_id": "cld-sample", "alt": "Bé trong giỏ với chăn mềm, tông cát và hồng" },
+      { "img_id": "cld-sample", "alt": "Bé ngáp, quấn khăn kem trên nền vải lanh" }
+    ]
+  },
+  "demo": {
+    "title": "Xem Demo",
+    "subtitle": "Thư viện ảnh hậu trường và thành phẩm để bạn cảm nhận phong cách chụp.",
+    "cover": {
+      "img_id": "cld-sample",
+      "alt": "Ảnh bìa thư viện ảnh demo newborn"
+    },
+    "gallery": [
+      { "img_id": "cld-sample", "alt": "Khoảnh khắc bé ngủ yên trên nền vải" },
+      { "img_id": "cld-sample", "alt": "Bố mẹ ôm ấp bé cạnh cửa sổ" },
+      { "img_id": "cld-sample", "alt": "Cận cảnh bàn chân bé" },
+      { "img_id": "cld-sample", "alt": "Bé ngủ bọc khăn trung tính" },
+      { "img_id": "cld-sample", "alt": "Cái ôm ấm áp của gia đình" },
+      { "img_id": "cld-sample", "alt": "Bàn tay bé cầm trái tim len" },
+      { "img_id": "cld-sample", "alt": "Anh/chị hôn trán em bé, ánh sáng ấm áp" },
+      { "img_id": "cld-sample", "alt": "Chân dung tối giản trên phông nền mềm" },
+      { "img_id": "cld-sample", "alt": "Bé đội mũ len nhỏ, tông màu trung tính" },
+      { "img_id": "cld-sample", "alt": "Bàn tay bố mẹ tạo hình trái tim quanh chân bé" }
+    ]
+  },
+  "pricing": {
+    "title": "Báo giá",
+    "subtitle": "Chọn gói phù hợp – mọi buổi chụp đều nhẹ nhàng, an toàn và ấm áp cho bé.",
+    "tiers": [
+      {
+        "key": "mini",
+        "name": "Mini",
+        "price": "2.500.000đ",
+        "desc": "Phù hợp ghi lại khoảnh khắc đầu đời nhanh gọn.",
+        "features": [
+          "Thời lượng 45 phút",
+          "5 ảnh chỉnh màu chất lượng cao",
+          "Tại studio, phông nền đơn giản"
+        ],
+        "images": [
+          { "img_id": "cld-sample", "alt": "Ảnh demo gói Mini 1" },
+          { "img_id": "cld-sample", "alt": "Ảnh demo gói Mini 2" }
+        ]
+      },
+      {
+        "key": "classic",
+        "name": "Classic",
+        "price": "4.500.000đ",
+        "desc": "Gói phổ biến cân bằng thời gian và kết quả.",
+        "features": [
+          "Thời lượng 2 giờ",
+          "15 ảnh chỉnh màu chất lượng cao",
+          "Tùy chọn props an toàn cho bé",
+          "Tư vấn trước buổi chụp"
+        ],
+        "highlight": true,
+        "images": [
+          { "img_id": "cld-sample", "alt": "Ảnh demo gói Classic 1" },
+          { "img_id": "cld-sample", "alt": "Ảnh demo gói Classic 2" }
+        ]
+      },
+      {
+        "key": "heirloom",
+        "name": "Heirloom",
+        "price": "7.500.000đ",
+        "desc": "Trọn vẹn khoảnh khắc, lưu giữ kỷ vật gia đình.",
+        "features": [
+          "Thời lượng 3 giờ",
+          "30 ảnh chỉnh màu + album in 20 trang",
+          "Chụp cùng bố mẹ/anh chị",
+          "Hỗ trợ styling và hướng dẫn pose"
+        ],
+        "images": [
+          { "img_id": "cld-sample", "alt": "Ảnh demo gói Heirloom 1" },
+          { "img_id": "cld-sample", "alt": "Ảnh demo gói Heirloom 2" }
+        ]
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "Cảm nhận khách hàng",
+    "subtitle": "Những lời chia sẻ chân thật từ các gia đình đã tin tưởng.",
+    "reviews": [
+      {
+        "name": "Lan & Minh",
+        "text": "Buổi chụp diễn ra rất nhẹ nhàng, bé được chăm sóc kỹ và ảnh thì quá tuyệt. Rất đáng để lưu giữ kỷ niệm đầu đời!",
+        "avatar": {
+          "img_id": "cld-sample",
+          "alt": "Ảnh chân dung Lan & Minh"
+        }
+      },
+      {
+        "name": "Thu Hà",
+        "text": "Studio ấm áp, sạch sẽ. Mình ấn tượng với cách xử lý ánh sáng tự nhiên, ảnh ra rất mềm mại và tinh tế.",
+        "avatar": {
+          "img_id": "cld-sample",
+          "alt": "Ảnh chân dung Thu Hà"
+        }
+      },
+      {
+        "name": "Anh Quân",
+        "text": "Nhiếp ảnh gia kiên nhẫn và chuyên nghiệp. Cả gia đình đều thoải mái, và sản phẩm cuối cùng vượt mong đợi.",
+        "avatar": {
+          "img_id": "cld-sample",
+          "alt": "Ảnh chân dung Anh Quân"
+        }
+      }
+    ]
+  }
+}

@@ -1,86 +1,47 @@
 import { useState } from "react";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
-import { Button } from "@/components/ui/button";
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
-import demoCover from "@/assets/demo-cover.jpg";
-import g1 from "@/assets/gallery1.jpg";
-import g2 from "@/assets/gallery2.jpg";
-import g3 from "@/assets/gallery3.jpg";
-import g4 from "@/assets/gallery4.jpg";
-import g5 from "@/assets/gallery5.jpg";
-import g6 from "@/assets/gallery6.jpg";
-import g9 from "@/assets/gallery9.jpg";
-import g10 from "@/assets/gallery10.jpg";
-import g11 from "@/assets/gallery11.jpg";
-import g12 from "@/assets/gallery12.jpg";
+import {
+  DialogTrigger,
+} from "@/components/ui/dialog";
+import { ImageGallery } from "@/components/ui/image-gallery";
+import type { Demo } from "@/config/types";
+import { getThumbSizeUrl } from "@/lib/utils";
 
-const demoImages = [
-  { src: g1, alt: "Khoảnh khắc bé ngủ yên trên nền vải" },
-  { src: g2, alt: "Bố mẹ ôm ấp bé cạnh cửa sổ" },
-  { src: g3, alt: "Cận cảnh bàn chân bé" },
-  { src: g4, alt: "Bé ngủ bọc khăn trung tính" },
-  { src: g5, alt: "Cái ôm ấm áp của gia đình" },
-  { src: g6, alt: "Bàn tay bé cầm trái tim len" },
-  { src: g9, alt: "Anh/chị hôn trán em bé, ánh sáng ấm áp" },
-  { src: g10, alt: "Chân dung tối giản trên phông nền mềm" },
-  { src: g11, alt: "Bé đội mũ len nhỏ, tông màu trung tính" },
-  { src: g12, alt: "Bàn tay bố mẹ tạo hình trái tim quanh chân bé" },
-];
-
-const Demo = () => {
+const DemoSection = ({ content }: { content: Demo }) => {
+  const { title, subtitle, cover, gallery } = content;
   const [open, setOpen] = useState(false);
-  const [selected, setSelected] = useState<number | null>(null);
 
   return (
     <section id="demo" className="container py-16 md:py-24">
       <header className="max-w-2xl mb-8">
-        <h2 className="font-display text-3xl md:text-4xl">Xem Demo</h2>
-        <p className="mt-2 text-muted-foreground">
-          Thư viện ảnh hậu trường và thành phẩm để bạn cảm nhận phong cách chụp.
-        </p>
+        <h2 className="font-display text-3xl md:text-4xl">{title}</h2>
+        <p className="mt-2 text-muted-foreground">{subtitle}</p>
       </header>
 
-      <Dialog open={open} onOpenChange={(v) => { setOpen(v); if (!v) setSelected(null); }}>
-        <DialogTrigger asChild>
-          <button className="w-full rounded-xl overflow-hidden border bg-card shadow-sm hover-scale" aria-label="Mở thư viện ảnh demo">
-            <AspectRatio ratio={16 / 9}>
-              <img src={demoCover} alt="Ảnh bìa thư viện ảnh demo newborn" className="h-full w-full object-cover" />
-            </AspectRatio>
-          </button>
-        </DialogTrigger>
-        <DialogContent className="max-w-4xl">
-          <DialogHeader>
-            <DialogTitle>Thư viện ảnh demo</DialogTitle>
-          </DialogHeader>
-
-          <div className="overflow-y-auto">
-            {selected === null ? (
-              <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-                {demoImages.map((img, idx) => (
-                  <button key={idx} onClick={() => setSelected(idx)} className="group rounded-lg overflow-hidden border hover-scale" aria-label={`Xem ảnh: ${img.alt}`}>
-                    <AspectRatio ratio={4 / 3}>
-                      <img src={img.src} alt={img.alt} className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.03]" />
-                    </AspectRatio>
-                  </button>
-                ))}
-              </div>
-            ) : (
-              <div className="space-y-4">
-                <AspectRatio ratio={4 / 3}>
-                  <img src={demoImages[selected].src} alt={demoImages[selected].alt} className="h-full w-full object-cover rounded-lg border" />
-                </AspectRatio>
-                <div className="flex items-center justify-between">
-                  <Button variant="outline" onClick={() => setSelected((i) => (i! > 0 ? (i! - 1) : demoImages.length - 1))}>Ảnh trước</Button>
-                  <Button variant="outline" onClick={() => setSelected(null)}>Quay lại lưới</Button>
-                  <Button variant="outline" onClick={() => setSelected((i) => (i! < demoImages.length - 1 ? (i! + 1) : 0))}>Ảnh tiếp</Button>
-                </div>
-              </div>
-            )}
+      <button
+        onClick={() => setOpen(true)}
+        className="w-full rounded-xl overflow-hidden border bg-card shadow-sm group"
+        aria-label="Mở thư viện ảnh demo"
+      >
+        <AspectRatio ratio={16 / 9}>
+          <div className="overflow-hidden h-full w-full">
+            <img
+              src={getThumbSizeUrl(cover.img_id, 800)}
+              alt={cover.alt}
+              className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.03]"
+            />
           </div>
-        </DialogContent>
-      </Dialog>
+        </AspectRatio>
+      </button>
+
+      <ImageGallery
+        images={gallery}
+        open={open}
+        onOpenChange={setOpen}
+        title="Thư viện ảnh demo"
+      />
     </section>
   );
 };
 
-export default Demo;
+export default DemoSection;

@@ -4,7 +4,7 @@ const Footer = () => {
   const year = new Date().getFullYear();
   return (
     <footer id="contact" className="border-t">
-      <div className="container py-10 md:py-14">
+      <div className="container py-8 md:py-14">
         <div className="grid md:grid-cols-2 gap-6 items-start">
           <div>
             <h3 className="font-display text-2xl">Hãy cùng ghi lại khoảnh khắc của bé yêu</h3>
