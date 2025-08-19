@@ -26,7 +26,7 @@ const DemoSection = ({ content }: { content: Demo }) => {
         <AspectRatio ratio={16 / 9}>
           <div className="overflow-hidden h-full w-full">
             <img
-              src={getThumbSizeUrl(cover.img_id, 800)}
+              src={getThumbSizeUrl(cover.img_id, 1200)}
               alt={cover.alt}
               className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.03]"
             />
