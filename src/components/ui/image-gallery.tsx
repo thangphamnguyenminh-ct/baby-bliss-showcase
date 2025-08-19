@@ -6,6 +6,7 @@ import {
   DialogContent,
   DialogHeader,
   DialogTitle,
+  DialogDescription,
 } from "@/components/ui/dialog";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import type { Image } from "@/config/types";
@@ -62,6 +63,9 @@ export const ImageGallery = ({ images, open, onOpenChange, title }: ImageGallery
         <DialogContent className="max-w-4xl">
           <DialogHeader>
             <DialogTitle>{title || "Thư viện ảnh"}</DialogTitle>
+            <DialogDescription>
+              Chọn một ảnh để xem chi tiết và phóng to
+            </DialogDescription>
           </DialogHeader>
 
           <div className="overflow-y-auto">
@@ -91,6 +95,12 @@ export const ImageGallery = ({ images, open, onOpenChange, title }: ImageGallery
       {selectedImage && (
         <Dialog open={detailOpen} onOpenChange={handleDetailClose}>
           <DialogContent className="bg-black/90 border-none !p-0 !max-w-none !w-screen !h-screen !rounded-none [&>button]:text-white [&>button]:bg-white/20 [&>button]:hover:bg-white/40">
+            <DialogHeader className="sr-only">
+              <DialogTitle>Chi tiết ảnh</DialogTitle>
+              <DialogDescription>
+                Xem ảnh chi tiết với khả năng điều hướng qua lại
+              </DialogDescription>
+            </DialogHeader>
             <div className="relative w-full h-full">
               <img
                 src={getFullSizeUrl(selectedImage.img_id)}

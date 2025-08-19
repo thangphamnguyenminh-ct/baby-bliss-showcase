@@ -28,11 +28,11 @@ const RecentWorkSection = ({ content }: { content: RecentWork }) => {
           {images.map((img: Image, index: number) => (
             <CarouselItem
               key={index}
-              className="basis-[85%] md:basis-[40%] lg:basis-[30%]"
+              className="basis-[75%] md:basis-[40%] lg:basis-[30%]"
             >
               <div className="p-1">
                 <img
-                  src={getThumbSizeUrl(img.img_id, 400)}
+                  src={getThumbSizeUrl(img.img_id, 800)}
                   alt={img.alt}
                   className="w-full h-full object-cover rounded-lg aspect-square"
                 />
