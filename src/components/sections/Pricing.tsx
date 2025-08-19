@@ -61,14 +61,14 @@ const PricingSection = ({ content }: { content: Pricing }) => {
       >
         <CarouselContent className="-ml-1">
           {tiers.map((t: Tier) => (
-            <CarouselItem key={t.name} className="basis-[90%] md:basis-[56%] lg:basis-[48%] pl-1">
+            <CarouselItem key={t.name} className="basis-[90%] md:basis-[42%] lg:basis-[33%] pl-1">
               <div className="p-1 h-full">
                 <Card className={t.highlight ? "ring-2 ring-primary h-full flex flex-col" : "h-full flex flex-col"}>
                   <div
                     onClick={() => { setActiveKey(t.key); setOpen(true); }}
                     className="w-full rounded-t-lg overflow-hidden border-b relative group cursor-pointer"
                   >
-                    <img src={getThumbSizeUrl(t.images[0].img_id, 300)} alt={t.images[0].alt} className="w-full h-44 object-cover" />
+                    <img src={getThumbSizeUrl(t.images[0].img_id, 400)} alt={t.images[0].alt} className="w-full h-44 object-cover" />
                     <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                       <span className="text-white text-lg font-semibold">Xem qua</span>
                     </div>

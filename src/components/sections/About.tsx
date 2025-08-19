@@ -16,7 +16,7 @@ const AboutSection = ({ content }: { content: About }) => {
           <article key={it.title} className="grid md:grid-cols-2 gap-8 items-center">
             <div className={idx % 2 === 1 ? "md:order-2" : ""}>
               <img
-                src={getThumbSizeUrl(it.image.img_id, 500)}
+                src={getThumbSizeUrl(it.image.img_id, 600)}
                 alt={it.image.alt}
                 className="w-full h-72 md:h-96 object-cover rounded-xl border"
                 loading="lazy"

@@ -28,7 +28,7 @@ const RecentWorkSection = ({ content }: { content: RecentWork }) => {
           {images.map((img: Image, index: number) => (
             <CarouselItem
               key={index}
-              className="basis-[85%] md:basis-[48%] lg:basis-[42%]"
+              className="basis-[85%] md:basis-[40%] lg:basis-[30%]"
             >
               <div className="p-1">
                 <img
