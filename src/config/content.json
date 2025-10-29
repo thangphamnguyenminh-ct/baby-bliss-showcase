@@ -1,7 +1,7 @@
 {
   "hero": {
     "image": {
-      "img_id": "2_24_wsbemd",
+      "img_id": "TIS2910_84_ghwgv1",
       "alt": "Newborn baby swaddled in soft linen, gentle natural light"
     },
     "title": "Ảnh Newborn Tinh Tế & Vượt Thời Gian",
@@ -17,7 +17,7 @@
         "title": "Không gian nhẹ nhàng, theo nhịp của bé",
         "text": "Mọi buổi chụp đều diễn ra chậm rãi, ưu tiên sự thoải mái của bé. Có thời gian cho bú, thay tã và ôm ấp, để từng khoảnh khắc đều tự nhiên.",
         "image": {
-          "img_id": "2_24_wsbemd",
+          "img_id": "TIS2910_49_ljnini",
           "alt": "Không gian studio ấm áp với ánh sáng cửa sổ và vải lanh"
         }
       },
@@ -25,7 +25,7 @@
         "title": "An toàn là số 1",
         "text": "Kỹ thuật tạo dáng baby-led, luôn có tay nâng đỡ khi cần. Đạo cụ sạch sẽ, mềm mại, đã được khử khuẩn và thân thiện với làn da bé.",
         "image": {
-          "img_id": "2_24_wsbemd",
+          "img_id": "TIS2910_90_pgune6",
           "alt": "Kỹ thuật đặt bé an toàn với tay hỗ trợ và phông nền pastel"
         }
       },
@@ -33,7 +33,7 @@
         "title": "Cả gia đình cùng tham gia",
         "text": "Khuyến khích bố mẹ và anh chị cùng vào khung hình. Những cái ôm, ánh nhìn tự nhiên sẽ là kỷ vật vô giá của gia đình.",
         "image": {
-          "img_id": "2_24_wsbemd",
+          "img_id": "TIS2910_56_od41ho",
           "alt": "Khu vực tiếp khách ấm cúng dành cho gia đình với ánh sáng tự nhiên"
         }
       }
@@ -43,34 +43,93 @@
     "title": "Dự án gần đây",
     "subtitle": "Những khoảnh khắc tinh tế được ghi lại.",
     "images": [
-      { "img_id": "2_24_wsbemd", "alt": "Bé ngủ bọc khăn màu hồng phấn trên nền vải lanh" },
-      { "img_id": "2_24_wsbemd", "alt": "Bố mẹ ôm bé cạnh cửa sổ, ánh sáng tự nhiên" },
-      { "img_id": "2_24_wsbemd", "alt": "Cận cảnh bàn chân bé sơ sinh quấn chăn mềm" },
-      { "img_id": "2_24_wsbemd", "alt": "Bé ngủ trên chăn dệt, khăn quấn trung tính" },
-      { "img_id": "2_24_wsbemd", "alt": "Khoảnh khắc gia đình ôm ấp bé gần cửa sổ" },
-      { "img_id": "2_24_wsbemd", "alt": "Cận cảnh bàn tay bé cầm trái tim len nhỏ" },
-      { "img_id": "2_24_wsbemd", "alt": "Bé trong giỏ với chăn mềm, tông cát và hồng" },
-      { "img_id": "2_24_wsbemd", "alt": "Bé ngáp, quấn khăn kem trên nền vải lanh" }
+      { "img_id": "TIS2910_138_yftcgc", "alt": "Bé ngủ bọc khăn màu hồng phấn trên nền vải lanh" },
+      { "img_id": "TIS2910_61_sqyrfz", "alt": "Bố mẹ ôm bé cạnh cửa sổ, ánh sáng tự nhiên" },
+      { "img_id": "TIS2910_40_k9au4l", "alt": "Cận cảnh bàn chân bé sơ sinh quấn chăn mềm" },
+      { "img_id": "TIS2910_3_zdsgjb", "alt": "Bé ngủ trên chăn dệt, khăn quấn trung tính" },
+      { "img_id": "TIS2910_72_cew7a0", "alt": "Khoảnh khắc gia đình ôm ấp bé gần cửa sổ" },
+      { "img_id": "TIS2910_67_jtzbcf", "alt": "Cận cảnh bàn tay bé cầm trái tim len nhỏ" },
+      { "img_id": "TIS2910_114_nspj54", "alt": "Bé trong giỏ với chăn mềm, tông cát và hồng" },
+      { "img_id": "TIS2910_71_mbp5ef", "alt": "Bé ngáp, quấn khăn kem trên nền vải lanh" },
+      { "img_id": "TIS2910_129_xnntuc", "alt": "Bé ngáp, quấn khăn kem trên nền vải lanh" },
+      { "img_id": "TIS2910_62_dfhkbm", "alt": "Bé ngáp, quấn khăn kem trên nền vải lanh" },
+      { "img_id": "TIS2910_19_sdoh4f", "alt": "Bé ngáp, quấn khăn kem trên nền vải lanh" },
+      { "img_id": "TIS2910_136_uewqmp", "alt": "Bé ngáp, quấn khăn kem trên nền vải lanh" },
+      { "img_id": "TIS2910_41_wuledk", "alt": "Bé ngáp, quấn khăn kem trên nền vải lanh" },
+      { "img_id": "TIS2910_13_niojmk", "alt": "Bé ngáp, quấn khăn kem trên nền vải lanh" },
+      { "img_id": "TIS2910_106_xbuip2", "alt": "Bé ngáp, quấn khăn kem trên nền vải lanh" },
+      { "img_id": "TIS2910_14_ie6jz3", "alt": "Bé ngáp, quấn khăn kem trên nền vải lanh" },
+      { "img_id": "TIS2910_6_t29xx6", "alt": "Bé ngáp, quấn khăn kem trên nền vải lanh" },
+      { "img_id": "TIS2910_131_lohcrn", "alt": "Bé ngáp, quấn khăn kem trên nền vải lanh" },
+      { "img_id": "TIS2910_135_vbszio", "alt": "Bé ngáp, quấn khăn kem trên nền vải lanh" },
+      { "img_id": "TIS2910_124_cs7zf3", "alt": "Bé ngáp, quấn khăn kem trên nền vải lanh" },
+      { "img_id": "TIS2910_42_yybduc", "alt": "Bé ngáp, quấn khăn kem trên nền vải lanh" },
+      { "img_id": "TIS2910_8_wpaffn", "alt": "Bé ngáp, quấn khăn kem trên nền vải lanh" },
+      { "img_id": "TIS2910_36_jjdbvb", "alt": "Bé ngáp, quấn khăn kem trên nền vải lanh" },
+      { "img_id": "TIS2910_127_ekatxl", "alt": "Bé ngáp, quấn khăn kem trên nền vải lanh" },
+      { "img_id": "TIS2910_32_u2qjan", "alt": "Bé ngáp, quấn khăn kem trên nền vải lanh" },
+      { "img_id": "TIS2910_63_czwqku", "alt": "Bé ngáp, quấn khăn kem trên nền vải lanh" },
+      { "img_id": "TIS2910_30_c3axdj", "alt": "Bé ngáp, quấn khăn kem trên nền vải lanh" },
+      { "img_id": "TIS2910_123_ujhesu", "alt": "Bé ngáp, quấn khăn kem trên nền vải lanh" },
+      { "img_id": "TIS2910_11_etsf2a", "alt": "Bé ngáp, quấn khăn kem trên nền vải lanh" },
+      { "img_id": "TIS2910_134_ctjsev", "alt": "Bé ngáp, quấn khăn kem trên nền vải lanh" },
+      { "img_id": "TIS2910_133_mintnk", "alt": "Bé ngáp, quấn khăn kem trên nền vải lanh" },
+      { "img_id": "TIS2910_50_x89ijk", "alt": "Bé ngáp, quấn khăn kem trên nền vải lanh" },
+      { "img_id": "TIS2910_93_z43ezg", "alt": "Bé ngáp, quấn khăn kem trên nền vải lanh" },
+      { "img_id": "TIS2910_73_ltyb0c", "alt": "Bé ngáp, quấn khăn kem trên nền vải lanh" },
+      { "img_id": "TIS2910_27_qlghim", "alt": "Bé ngáp, quấn khăn kem trên nền vải lanh" }
     ]
   },
-  "demo": {
-    "title": "Xem Demo",
-    "subtitle": "Thư viện ảnh hậu trường và thành phẩm để bạn cảm nhận phong cách chụp.",
+  "concept": {
+    "title": "Concept",
+    "subtitle": "Thư viện ảnh để bạn cảm nhận phong cách chụp.",
     "cover": {
-      "img_id": "2_24_wsbemd",
-      "alt": "Ảnh bìa thư viện ảnh demo newborn"
+      "img_id": "bia_concept_t5nauf",
+      "alt": "Ảnh bìa thư viện ảnh concept"
     },
     "gallery": [
-      { "img_id": "2_24_wsbemd", "alt": "Khoảnh khắc bé ngủ yên trên nền vải" },
-      { "img_id": "2_24_wsbemd", "alt": "Bố mẹ ôm ấp bé cạnh cửa sổ" },
-      { "img_id": "2_24_wsbemd", "alt": "Cận cảnh bàn chân bé" },
-      { "img_id": "2_24_wsbemd", "alt": "Bé ngủ bọc khăn trung tính" },
-      { "img_id": "2_24_wsbemd", "alt": "Cái ôm ấm áp của gia đình" },
-      { "img_id": "2_24_wsbemd", "alt": "Bàn tay bé cầm trái tim len" },
-      { "img_id": "2_24_wsbemd", "alt": "Anh/chị hôn trán em bé, ánh sáng ấm áp" },
-      { "img_id": "2_24_wsbemd", "alt": "Chân dung tối giản trên phông nền mềm" },
-      { "img_id": "2_24_wsbemd", "alt": "Bé đội mũ len nhỏ, tông màu trung tính" },
-      { "img_id": "2_24_wsbemd", "alt": "Bàn tay bố mẹ tạo hình trái tim quanh chân bé" }
+      { "img_id": "Newborn_jtca1p", "alt": "Khoảnh khắc bé ngủ yên trên nền vải" },
+      { "img_id": "Newborn_19_qqlxbs", "alt": "Bố mẹ ôm ấp bé cạnh cửa sổ" },
+      { "img_id": "Newborn_17_le9nnq", "alt": "Cận cảnh bàn chân bé" },
+      { "img_id": "Newborn_16_eqfi9w", "alt": "Bé ngủ bọc khăn trung tính" },
+      { "img_id": "Newborn_15_j8vajj", "alt": "Cái ôm ấm áp của gia đình" },
+      { "img_id": "Newborn_14_dbbdv6", "alt": "Bàn tay bé cầm trái tim len" },
+      { "img_id": "Newborn_13_ykeufa", "alt": "Anh/chị hôn trán em bé, ánh sáng ấm áp" },
+      { "img_id": "Newborn_12_enonog", "alt": "Chân dung tối giản trên phông nền mềm" },
+      { "img_id": "Newborn_11_uzehzg", "alt": "Bé đội mũ len nhỏ, tông màu trung tính" },
+      { "img_id": "Newborn_10_itvmnx", "alt": "Bàn tay bố mẹ tạo hình trái tim quanh chân bé" },
+      { "img_id": "Newborn_9_izaaro", "alt": "Bàn tay bố mẹ tạo hình trái tim quanh chân bé" },
+      { "img_id": "Newborn_8_gpmcba", "alt": "Bàn tay bố mẹ tạo hình trái tim quanh chân bé" },
+      { "img_id": "Newborn_6_ss29ef", "alt": "Bàn tay bố mẹ tạo hình trái tim quanh chân bé" },
+      { "img_id": "Newborn_7_zrgbt7", "alt": "Bàn tay bố mẹ tạo hình trái tim quanh chân bé" },
+      { "img_id": "Newborn_5_z5i4u2", "alt": "Bàn tay bố mẹ tạo hình trái tim quanh chân bé" },
+      { "img_id": "Newborn_3_ndxsfq", "alt": "Bàn tay bố mẹ tạo hình trái tim quanh chân bé" },
+      { "img_id": "Newborn_4_mzryyh", "alt": "Bàn tay bố mẹ tạo hình trái tim quanh chân bé" },
+      { "img_id": "Newborn_2_xtdwbx", "alt": "Bàn tay bố mẹ tạo hình trái tim quanh chân bé" },
+      { "img_id": "37_md1iky", "alt": "Bàn tay bố mẹ tạo hình trái tim quanh chân bé" },
+      { "img_id": "36_lz68zf", "alt": "Bàn tay bố mẹ tạo hình trái tim quanh chân bé" },
+      { "img_id": "34_uyqfix", "alt": "Bàn tay bố mẹ tạo hình trái tim quanh chân bé" },
+      { "img_id": "33_rhuopf", "alt": "Bàn tay bố mẹ tạo hình trái tim quanh chân bé" },
+      { "img_id": "26_h4vkd3", "alt": "Bàn tay bố mẹ tạo hình trái tim quanh chân bé" },
+      { "img_id": "25_rs4rix", "alt": "Bàn tay bố mẹ tạo hình trái tim quanh chân bé" },
+      { "img_id": "23_igxhop", "alt": "Bàn tay bố mẹ tạo hình trái tim quanh chân bé" },
+      { "img_id": "22_jw76fx", "alt": "Bàn tay bố mẹ tạo hình trái tim quanh chân bé" },
+      { "img_id": "21_dnduca", "alt": "Bàn tay bố mẹ tạo hình trái tim quanh chân bé" },
+      { "img_id": "20_nected", "alt": "Bàn tay bố mẹ tạo hình trái tim quanh chân bé" },
+      { "img_id": "17_viotgb", "alt": "Bàn tay bố mẹ tạo hình trái tim quanh chân bé" },
+      { "img_id": "13_pkmi2f", "alt": "Bàn tay bố mẹ tạo hình trái tim quanh chân bé" },
+      { "img_id": "12_ews75n", "alt": "Bàn tay bố mẹ tạo hình trái tim quanh chân bé" },
+      { "img_id": "9_y58x67", "alt": "Bàn tay bố mẹ tạo hình trái tim quanh chân bé" },
+      { "img_id": "8_wgbipi", "alt": "Bàn tay bố mẹ tạo hình trái tim quanh chân bé" },
+      { "img_id": "7_ce4kev", "alt": "Bàn tay bố mẹ tạo hình trái tim quanh chân bé" },
+      { "img_id": "6_ekli8j", "alt": "Bàn tay bố mẹ tạo hình trái tim quanh chân bé" },
+      { "img_id": "5_twlthr", "alt": "Bàn tay bố mẹ tạo hình trái tim quanh chân bé" },
+      { "img_id": "4_o1arxi", "alt": "Bàn tay bố mẹ tạo hình trái tim quanh chân bé" },
+      { "img_id": "3_b0jegc", "alt": "Bàn tay bố mẹ tạo hình trái tim quanh chân bé" },
+      { "img_id": "Newborn_40_ekfqs8", "alt": "Bàn tay bố mẹ tạo hình trái tim quanh chân bé" },
+      { "img_id": "Newborn_39_gq69ti", "alt": "Bàn tay bố mẹ tạo hình trái tim quanh chân bé" },
+      { "img_id": "Newborn_38_s8ffeo", "alt": "Bàn tay bố mẹ tạo hình trái tim quanh chân bé" },
+      { "img_id": "Newborn_37_ge4unc", "alt": "Bàn tay bố mẹ tạo hình trái tim quanh chân bé" }
     ]
   },
   "pricing": {
@@ -156,5 +215,12 @@
         }
       }
     ]
+  },
+  "contact": {
+    "facebook": "https://www.facebook.com/StudioTis",
+    "instagram": "https://www.instagram.com/chunam.photography.newborn/",
+    "email": "cutis.studio1@gmail.com",
+    "phone": "0933181285",
+    "phoneDisplay": "0933 181 285"
   }
 }

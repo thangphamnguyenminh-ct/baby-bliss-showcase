@@ -33,7 +33,7 @@ const RecentWorkSection = ({ content }: { content: RecentWork }) => {
               <div className="p-1">
                 <img
                   src={getThumbSizeUrl(img.img_id, 800)}
-                  alt={img.alt}
+                  alt={img.img_id}
                   className="w-full h-full object-cover rounded-lg aspect-square"
                 />
               </div>

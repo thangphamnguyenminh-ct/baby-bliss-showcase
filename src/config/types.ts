@@ -32,7 +32,7 @@ export type RecentWork = {
   images: Image[];
 };
 
-export type Demo = {
+export type Concept = {
   title: string;
   subtitle: string;
   cover: Image;
@@ -67,11 +67,20 @@ export type Testimonials = {
   reviews: Review[];
 };
 
+export type Contact = {
+  facebook: string;
+  instagram: string;
+  email: string;
+  phone: string;
+  phoneDisplay: string;
+};
+
 export type Content = {
   hero: Hero;
   about: About;
   recentWork: RecentWork;
-  demo: Demo;
+  concept: Concept;
   pricing: Pricing;
   testimonials: Testimonials;
+  contact: Contact;
 };

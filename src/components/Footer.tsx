@@ -1,6 +1,7 @@
 import { Facebook, Instagram, Mail, Phone } from "lucide-react";
+import type { Contact } from "@/config/types";
 
-const Footer = () => {
+const Footer = ({ contact }: { contact: Contact }) => {
   const year = new Date().getFullYear();
   return (
     <footer id="contact" className="border-t">
@@ -12,18 +13,18 @@ const Footer = () => {
               Số lượng buổi chụp giới hạn mỗi tháng để đảm bảo trải nghiệm nhẹ nhàng, không vội vã mà gia đình bạn xứng đáng có được.
             </p>
             <div className="flex gap-4 mt-4">
-              <a href="https://facebook.com/yourpage" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <a href={contact.facebook} target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                 <Facebook className="h-6 w-6 text-muted-foreground hover:text-primary transition-colors" />
               </a>
-              <a href="https://instagram.com/yourpage" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <a href={contact.instagram} target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                 <Instagram className="h-6 w-6 text-muted-foreground hover:text-primary transition-colors" />
               </a>
-              <a href="mailto:hello@example.com" aria-label="Email">
+              <a href={`mailto:${contact.email}`} aria-label="Email">
                 <Mail className="h-6 w-6 text-muted-foreground hover:text-primary transition-colors" />
               </a>
-              <a href="tel:+1234567890" aria-label="Phone" className="flex items-center gap-2">
+              <a href={`tel:${contact.phone}`} aria-label="Phone" className="flex items-center gap-2">
                 <Phone className="h-6 w-6 text-muted-foreground hover:text-primary transition-colors" />
-                <span className="text-muted-foreground hover:text-primary transition-colors">+84 123 456 789</span>
+                <span className="text-muted-foreground hover:text-primary transition-colors">{contact.phoneDisplay}</span>
               </a>
             </div>
           </div>

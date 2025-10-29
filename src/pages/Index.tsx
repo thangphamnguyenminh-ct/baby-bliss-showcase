@@ -12,13 +12,13 @@ const Index = ({ content }: { content: Content }) => {
   return (
     <main className="min-h-screen bg-background">
       <NavBar />
-      <HeroSection content={content.hero} />
+      <HeroSection content={content.hero} contact={content.contact} />
       <RecentWorkSection content={content.recentWork} />
       <AboutSection content={content.about} />
-      <DemoSection content={content.demo} />
+      <DemoSection content={content.concept} />
       <PricingSection content={content.pricing} />
       <TestimonialsSection content={content.testimonials} />
-      <Footer />
+      <Footer contact={content.contact} />
     </main>
   );
 };

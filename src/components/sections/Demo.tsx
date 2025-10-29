@@ -4,10 +4,10 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { ImageGallery } from "@/components/ui/image-gallery";
-import type { Demo } from "@/config/types";
+import type { Concept } from "@/config/types";
 import { getThumbSizeUrl } from "@/lib/utils";
 
-const DemoSection = ({ content }: { content: Demo }) => {
+const DemoSection = ({ content }: { content: Concept }) => {
   const { title, subtitle, cover, gallery } = content;
   const [open, setOpen] = useState(false);
 
@@ -23,7 +23,7 @@ const DemoSection = ({ content }: { content: Demo }) => {
         className="w-full rounded-xl overflow-hidden border bg-card shadow-sm group"
         aria-label="Mở thư viện ảnh demo"
       >
-        <AspectRatio ratio={16 / 9}>
+        <AspectRatio ratio={1182 / 788}>
           <div className="overflow-hidden h-full w-full">
             <img
               src={getThumbSizeUrl(cover.img_id, 1200)}
